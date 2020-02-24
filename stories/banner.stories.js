@@ -6,7 +6,7 @@ import img from '../Images/People Outdoors/shutterstock_116403520.jpg';
 import leftImg from '../Images/Products/boots/shutterstock_66842440.jpg';
 import rightImg from '../Images/Products/boots/shutterstock_1121278055.jpg';
 
-storiesOf("MajorBanner",module)
+storiesOf("Component | Banners/Major",module)
     .add("With Only Title", () => (
         <MajorBanner title="Banner Title" photo={img} />
     ))
@@ -20,7 +20,7 @@ storiesOf("MajorBanner",module)
     ));
 
 
-storiesOf("MinorBanner",module)
+storiesOf("Component | Banners/Minor",module)
     .add("No Pictures", () => (
         <MinorBanner 
             title="Banner Title" 

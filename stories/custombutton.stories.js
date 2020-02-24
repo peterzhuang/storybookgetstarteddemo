@@ -2,6 +2,7 @@ import React from 'react';
 // import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import CallToAction from '../components/form/cta-button';
+import {withInfo} from '@storybook/addon-info';
 
 // storiesOf("MyButton", module)
 //     .add("Call to Action", () => (
@@ -10,7 +11,16 @@ import CallToAction from '../components/form/cta-button';
 
 export default {
     component: CallToAction,
-    title: 'MyButton',
+    title: 'Building Blocks | MyButton',
+    decorators: [withInfo],
+    parameters: {
+      info: {
+        inline: true,
+        text: `
+          description or documentation about my component
+        `,
+      },
+    },
     // Our exports that end in "Data" are not stories.
     excludeStories: /.*Data$/,
   };
